@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کانال‌های من 🔰</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .container {
+            padding: 20px;
+            padding-top: 50px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+            background: linear-gradient(90deg, #ff00aa, #00ffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p {
+            color: #888;
+            margin-bottom: 35px;
+            font-size: 16px;
+        }
+        .card {
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 20px;
+            padding: 22px;
+            margin: 16px auto;
+            max-width: 90%;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        .card:active {
+            transform: scale(0.95);
+            background: #222;
+            box-shadow: 0 4px 15px rgba(255,255,255,0.1);
+        }
+        .card h3 {
+            margin: 0;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .footer {
+            margin-top: 60px;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>کانال‌های من 🔰</h1>
+    <p>یکی رو انتخاب کن و وارد شو</p>
+
+    <div class="card" onclick="Telegram.WebApp.openLink('https://t.me/shadow_alonex')">
+        <h3>🌑 Shadow Alonex</h3>
+    </div>
+
+    <div class="card" onclick="Telegram.WebApp.openLink('https://t.me/NiCaToR_NKR')">
+        <h3>⚡ NiCaToR NKR</h3>
+    </div>
+
+    <div class="card" onclick="Telegram.WebApp.openLink('https://t.me/XO_OSKAR')">
+        <h3>🔥 XO OSKAR</h3>
+    </div>
+
+    <div class="footer">
+        با ❤️ ساخته شده برای شما
+    </div>
+</div>
+
+<script>
+    Telegram.WebApp.ready();
+    Telegram.WebApp.expand();
+    
+    // تم دارک تلگرام رو فعال کن (اختیاری ولی قشنگ‌تر می‌شه)
+    if (Telegram.WebApp.initDataUnsafe.user) {
+        Telegram.WebApp.setHeaderColor('#000000');
+        Telegram.WebApp.setBackgroundColor('#000000');
+    }
+</script>
+
+</body>
+</html>
