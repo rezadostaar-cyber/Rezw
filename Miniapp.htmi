@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Channels Mini App</title>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            direction: rtl;
+            padding: 25px;
+            background: #f2f2f2;
+        }
+        .channel {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 0 8px rgba(0,0,0,0.15);
+            transition: 0.2s;
+        }
+        .channel:active {
+            transform: scale(0.97);
+        }
+    </style>
+</head>
+<body>
+
+    <h2>کانال‌های من 🔰</h2>
+    <p>روی هر کانال بزنی، وارد همون چنل میشی.</p>
+
+    <!-- کانال اول -->
+    <div class="channel" onclick="openChannel('@shadow_alonex')">
+        Shadow Alonex
+    </div>
+
+    <!-- کانال دوم -->
+    <div class="channel" onclick="openChannel('@NiCaToR_NKR')">
+        NiCaToR NKR
+    </div>
+
+    <!-- کانال سوم -->
+    <div class="channel" onclick="openChannel('@XO_OSKAR')">
+        XO OSKAR
+    </div>
+
+    <script>
+        function openChannel(url) {
+            window.location.href = url;
+        }
+    </script>
+
+</body>
+</html>
